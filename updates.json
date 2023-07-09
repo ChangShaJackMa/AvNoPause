@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "{abcd1234-1abc-1234-12ab-abcdef123456}": {
+            "updates": [
+                {
+                    "version": "2.0",
+                    "update_link": "https://example.com/addon-0.1.xpi"
+                }
+            ]
+        }
+    }
+}
