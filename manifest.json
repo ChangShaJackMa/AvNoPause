@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "MissavNoPause",
-  "version": "1.0",
+  "version": "2.0",
 
   "description": "Missav切换页面或者失去焦点都会自动暂停，此插件就是组织视频自动暂停，不影响空格或者单击导致的暂停。源码地址：https://github.com/ChangShaJackMa/MissavNoPause。",
 
@@ -14,6 +14,13 @@
       "js": ["content_start.js"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "applications": {
+    "gecko": {
+      "id": "",
+      "update_url": "https://github.com/ChangShaJackMa/MissavNoPause/blob/main/updates.json"
+    }
+  }
+
 
 }
