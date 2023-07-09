@@ -10,3 +10,5 @@ firefox扩展教程：https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/W
 firefox打包教程：https://requestly.io/blog/self-host-mozilla-add-on（因为是访问黄网，所以addon中心拒绝了此插件，只能自己安装）
 
 firefox开发者中心：https://addons.mozilla.org/zh-CN/developers/
+
+游猴.js是用于游猴的脚本，内容基本和content.js一样，只不过把manifest中的设置搬到了脚本里面
