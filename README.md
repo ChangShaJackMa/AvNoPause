@@ -1,9 +1,14 @@
 # MissavNoPause
-用的manifest v2，当浏览器不再支持v2的时候此插件将失效，不是不想用v3，而是百度了个把星期都没找到在v3中eval的替代品，然后放弃chrome，转用的v2，只有firefox支持v2，谷歌歌只接受manifest v3，v3不能直接eval，content scripts不能在pageJs中执行，不知道怎么搞。
+Missav切换页面或者失去焦点都会自动暂停，此插件就是阻止视频自动暂停，不影响空格或者单击导致的暂停。注意：使用manifestV3实现后，可能每次需要手动授权才会运行，首次使用，如果需要授权，请选择总是允许(chrome可能不需要，firefox可能需要)，这样下次打开页面插件就会自动运行了。
 
-很简单的插件，用来阻止missav自动暂停，此插件不会影响手动空格暂停或者单击视频暂停。 原理很简单，就是设置content scripts run_at document.start，然后拦截window.blur/document.blur/document.visibilitychange事件传递给网页自带的js，因为网页就是通过这三个事件来自动暂停.
 
-MissavNoPause.xpi就是打包以后的插件，直接拖拽到firefox即可自动安装（如果开启隐私模式，需要允许在隐私模式下运行）
+各浏览器安装插件：
+chrome：只能通过临时加载插件来加载，因为谷歌开发者注册要5美元，注册也不一定能通过审核，所以未经上架的xx.crx文件不能运行，虽然叫临时加载插件，但是加载一次以后就不用再次加载了
+    把xx.xpi解压到a文件夹，然后在chrome里直接添加该文件夹a就行，详细操作，请见Loading an unpacked extension一节：https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
+firefox：xx.xpi文件就是离线安装包，直接拖拽到firefox浏览器就行（如果开启隐私模式，需要允许在隐私模式下运行）,firefox默认每次都需要授权，请选择总是允许
+![img.png](img.png)
+Edge:用不了，审核不过
+国产浏览器：如果是chrome系列的如360浏览器，都是使用crx文件，国产的直接拖拽crx文件到浏览器就行，如果可以用就ok，如果不可以加载crx文件（因为没有审核，所以加载以后可能不允许运行）那就只能通过加载临时插件了，步骤同chrome
 
 firefox扩展教程：https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
 
