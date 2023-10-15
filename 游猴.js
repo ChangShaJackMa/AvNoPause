@@ -9,6 +9,7 @@
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
+// 此文件不会同步更新，有需要自己根据content_start.js去改
 function run() {
     console.log("I am work")
     document.addEventListener("visibilitychange",(event)=>{
