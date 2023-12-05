@@ -1,3 +1,4 @@
+main分支：成品    dev分支：还在开发中的功能
 这是一个小工具，取消av网站自动暂停，目前是一个页面一个页面的手动开发，后续有时间会做成一个小工具，可以通过添加规则的方式来自动暂停，目前只收录两个网站
 
 # missav.com/thisav.com
@@ -38,9 +39,9 @@
 > 未完，待补充
 
 
-# ！！修改代码后，下面的安装包不会同步更新，需要自己手动更新
+# ！！修改代码后，下面的安装包不再同步更新，需要自己手动更新
 各浏览器安装插件：
-chrome：只能通过临时加载插件来加载，因为谷歌开发者注册要5美元，注册也不一定能通过审核，所以未经上架的xx.crx文件不能运行，虽然叫临时加载插件，但是加载一次以后就不用再次加载了。把xx.xpi解压到a文件夹，然后在chrome里直接添加该文件夹a就行，也可以直接加载extensionSource文件夹，详细操作，请见Loading an unpacked extension一节：https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
+chrome：只能通过临时加载插件来加载，因为谷歌开发者注册要5美元，注册也不一定能通过审核，所以未经上架的xx.crx文件不能运行，虽然叫临时加载插件，但是加载一次以后就不用再次加载了。把xx.xpi解压到a文件夹，然后在chrome里直接添加该文件夹a就行，也可以直接加载AvNoPause文件夹，详细操作，请见Loading an unpacked extension一节：https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
     
 firefox：xx.xpi文件就是离线安装包，直接拖拽到firefox浏览器就行（如果开启隐私模式，需要允许在隐私模式下运行）,firefox默认每次都需要授权，请选择总是允许
 ![img.png](img.png)
