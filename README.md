@@ -41,9 +41,9 @@ main分支：成品    dev分支：还在开发中的功能
 
 # ！！修改代码后，下面的安装包不再同步更新，需要自己手动更新
 各浏览器安装插件：
-chrome：只能通过临时加载插件来加载，因为谷歌开发者注册要5美元，注册也不一定能通过审核，所以未经上架的xx.crx文件不能运行，虽然叫临时加载插件，但是加载一次以后就不用再次加载了。把xx.xpi解压到a文件夹，然后在chrome里直接添加该文件夹a就行，也可以直接加载AvNoPause文件夹，详细操作，请见Loading an unpacked extension一节：https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
+chrome：只能通过临时加载插件来加载，因为谷歌开发者注册要5美元，注册也不一定能通过审核，所以未经上架的xx.crx文件不能运行，虽然叫临时加载插件，但是加载一次以后就不用再次加载了。把xx.xpi解压到a文件夹，然后在chrome里直接添加该文件夹a就行，也可以直接加载AvNoPause文件夹，如果采用添加AvNoPause文件夹的方式，则需要把AvNoPause/manifest删掉，把AvNoPause/manifest_google.json改名为AvNoPause/manifest.json，然后才可以成功加载，因为原文件中的manifest.json是专用于firefox的，详细操作，请见Loading an unpacked extension一节：https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
     
-firefox：xx.xpi文件就是离线安装包，直接拖拽到firefox浏览器就行（如果开启隐私模式，需要允许在隐私模式下运行）,firefox默认每次都需要授权，请选择总是允许
+firefox：xx.xpi文件就是离线安装包，直接拖拽到firefox浏览器就行，也可以加载临时插件，直接加载avNoPause文件夹就行（如果开启隐私模式，需要允许在隐私模式下运行）,firefox默认每次都需要授权，请选择总是允许
 ![img.png](img.png)
 Edge:用不了，审核不过
 
