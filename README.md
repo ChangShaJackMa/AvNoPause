@@ -10,8 +10,32 @@
 >直接通过过滤掉scroll事件来关闭自动暂停
 
 
+# 推荐给老色皮的组合拳
+>1:firefox
+> 
+>2:firefox 插件(Mute sites by default):可以默认静音所有网站，除非主动开启，不过还是建议直接windows静音，以免误操作，社死
+> 
+>3:ublock origin: 可以自动屏蔽绝大多数色情网站的广告、弹窗，让你清爽看av
+> 
+>4:idm(Internet Download Manager): 淘宝三十几块钱一年，电脑安装idm后idm会自动在浏览器里添加idm扩展，基本上所有av网站的视频都可以一键下载，非常方便，不过有一点不好，自从用了idm，2tb的硬盘容量都不够了
+> 
+>5:视频下载器: idm下载有些网站的视频时会报错无法下载受保护的资源，此时就可以用这个开源工具了，使用很简单，看readme就行，具体网址：https://github.com/nilaoda/N_m3u8DL-CLI.git
+> 
+>6:letsvpn: 三百块左右一年，你还别说，这个vpn非常稳定而且下载速度非常快，如果下载源给力的话，最高可达100Mb/s足有(是100M比特，大概可达十几兆每秒的样子)，不过不建议短时间内下载几十G的av，因为会被判定为异常会被封号，需要找客服退款，然后重新注册一个账号，比较麻烦，连续下载个十几G还是可以的
 
 
+# 色情网站合集
+>0: xvideos.com
+> 
+>1: pornhub.com
+> 
+>2: https://noodlemagazine.com/video/welcome !!xvideos或者pornhub上许多不全的视频这上面都有，不过在线观看比较慢，一般都是xvideos上看到对应的女优，然后来这上面搜名字，然后使用idm下载，下载速度每秒五六兆左右吧
+> 
+>3: missav.com
+> 
+>4: javlibrary.com :missav上有些视频没有actress，这里面可以碰碰运气，兴许可以找到
+> 
+> 未完，待补充
 
 
 # ！！修改代码后，下面的安装包不会同步更新，需要自己手动更新
