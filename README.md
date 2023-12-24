@@ -47,8 +47,14 @@ main分支：成品    dev分支：还在开发中的功能
 
 # ！！修改代码后，下面的安装包不再同步更新，需要自己手动更新
 各浏览器安装插件：
-chrome：只能通过临时加载插件来加载，因为谷歌开发者注册要5美元，注册也不一定能通过审核，所以未经上架的xx.crx文件不能运行，虽然叫临时加载插件，但是加载一次以后就不用再次加载了。把xx.xpi解压到a文件夹，然后在chrome里直接添加该文件夹a就行，也可以直接加载AvNoPause文件夹，如果采用添加AvNoPause文件夹的方式，则需要把AvNoPause/manifest删掉，把AvNoPause/manifest_google.json改名为AvNoPause/manifest.json，然后才可以成功加载，因为原文件中的manifest.json是专用于firefox的，详细操作，请见Loading an unpacked extension一节：https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/
-    
+chrome：只能加载临时插件的方式加载xpi文件：
+>方式一：解压xx.xpi文件，然后直接通过google浏览器加载该文件夹（不保证xx.xpi文件是最新的）:
+>> google浏览器:设置->扩展程序->开发这模式->加载已解压的扩展程序
+> 
+>方式二：直接加载avnoPause/avNoPause文件夹
+>> google浏览器:设置->扩展程序->开发这模式->加载已解压的扩展程序
+>
+> 
 firefox：xx.xpi文件就是离线安装包，直接拖拽到firefox浏览器就行，也可以加载临时插件，直接加载avNoPause文件夹就行（如果开启隐私模式，需要允许在隐私模式下运行）,firefox默认每次都需要授权，请选择总是允许
 ![img.png](img.png)
 Edge:用不了，审核不过
@@ -57,9 +63,24 @@ Edge:用不了，审核不过
 
 firefox扩展教程：https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
 
-firefox打包教程：https://requestly.io/blog/self-host-mozilla-add-on（因为是访问黄网，所以addon中心拒绝了此插件，只能自己安装）
-
 firefox开发者中心：https://addons.mozilla.org/zh-CN/developers/
 
 firefox两步验证登陆:https://support.mozilla.org/zh-CN/kb/%E7%94%A8%E4%B8%A4%E6%AD%A5%E9%AA%8C%E8%AF%81%E4%BF%9D%E6%8A%A4%E4%BD%A0%E7%9A%84%20Firefox%20%E8%B4%A6%E6%88%B7
 
+firefox打包教程:
+>1:下载npm:https://nodejs.org/en/download
+>
+>2:安装web-ext: npm install --global web-ext 
+>
+>3:进入AvNoPause/AvNoPause目录:cd 你的目录
+> 
+>4:允许web-ext:Set-ExcutionPolicy RemoteSigned
+> 
+>5:删除manifest.json文件，并把manifest_firefox.json文件名修改为manifest.json文件，并修改文件内容：
+>>"browser_specific_settings": {"gecko": {"id":"在这里随便填写一个新的id,格式为xx@xx"｝｝
+> 
+>6:运行web-ext sgin: web-ext sign --api-key "你的用户名" --api-secret "你的jwt key"
+> ![img_1.png](keyWithSecret.png)
+> 
+>7:然后进入AvNoPause/AvNoPause/web-ext目录下找到xx.xpi文件，这个文件就是最新生成的firefox插件，然后拖放到firefox中就行了
+ 

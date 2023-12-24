@@ -3,7 +3,7 @@
   "name": "AvNoPause",
   "version": "5.0",
 
-  "description": "一些av网站切换页面或者失去焦点都会自动暂停，此插件就是阻止视频自动暂停，不影响空格或者单击导致的暂停。注意：使用manifestV3实现后，可能每次需要手动授权才会运行，首次使用，如果需要授权，请选择总是允许(chrome不需要，firefox需要)，这样下次打开页面就会自动运行了。源码地址：https://github.com/ChangShaJackMa/AvNoPause。",
+  "description": "av网站小工具：复制下载链接、禁止自动暂停等",
   "icons": {
     "48": "noPause.png"
   },
@@ -12,6 +12,11 @@
       "matches": ["*://missav.com/*","*://ch.cuteasiangirl.net/*","*://thisav.com/*"],
       "js": ["content_start.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.javtiful.com/video/*","*://javtiful.com/video/*" ],
+      "js": ["content_end.js"],
+      "run_at": "document_end"
     }
   ]
 }
