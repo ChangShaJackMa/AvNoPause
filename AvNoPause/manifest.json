@@ -12,11 +12,11 @@
       "matches": ["*://missav.com/*","*://ch.cuteasiangirl.net/*","*://thisav.com/*"],
       "js": ["content_start.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.javtiful.com/video/*","*://javtiful.com/video/*" ],
+      "js": ["content_end.js"],
+      "run_at": "document_end"
     }
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "{5a9b3da7-dfd7-49f1-8b45-2068cb106df7}"
-    }
-  }
+  ]
 }
