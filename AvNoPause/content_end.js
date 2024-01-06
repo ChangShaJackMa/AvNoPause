@@ -6,13 +6,20 @@ function Javtiful_copyvideourlOrdownloadvideobybrowser(){
     function copyUrl() {
         let video = document.querySelector("video#hls-video")
         if (video != null && video.src !== "") {
-            var textarea = document.createElement('textarea');
+            /*var textarea = document.createElement('textarea');
             textarea.style.visibility="false"
             document.body.appendChild(textarea);
             textarea.value =video.src
             textarea.select();
             document.execCommand('copy', true);
-            console.log("copy url:",video.src)
+            console.log("copy url:",video.src)*/
+            navigator.clipboard.writeText(video.src)
+                .then(() => {
+                    console.log('复制成功:',video.src);
+                })
+                .catch(err => {
+                    console.error('复制失败：', err);
+                });
         } else {
             alert("please click player button before copyurl")
         }
