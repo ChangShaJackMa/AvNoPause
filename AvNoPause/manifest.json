@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AvNoPause",
-  "version": "6.0",
+  "version": "5.0",
 
   "description": "av网站小工具：复制下载链接、禁止自动暂停等",
   "icons": {
@@ -9,20 +9,19 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://missav.com/*","*://ch.cuteasiangirl.net/*","*://thisav.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["content_start.js"],
       "run_at": "document_start"
     },
     {
-      "matches": ["*://*.javtiful.com/video/*","*://javtiful.com/video/*" ],
+      "matches": ["<all_urls>"],
       "js": ["content_end.js"],
       "run_at": "document_end"
     }
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id":"dcf@fcd"
+      "id": "dcf@cmn"
     }
   }
-
 }

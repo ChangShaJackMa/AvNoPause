@@ -84,3 +84,5 @@ firefox打包教程:
 > 
 >7:然后进入AvNoPause/AvNoPause/web-ext目录下找到xx.xpi文件，这个文件就是最新生成的firefox插件，然后拖放到firefox中就行了
  
+
+备注：不知道为啥，在cn.javtiful.com网站上，脚本正常运行了，但是按快捷键没反应

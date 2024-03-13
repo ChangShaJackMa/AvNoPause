@@ -32,6 +32,12 @@ function CuteAsainGirl_nopause(){
 
 function run(){
     site=document.domain
+    if (site.match("miss")){
+        site="missav.com"
+    }
+    if (site.match("this")){
+        site="thisav.com"
+    }
     switch (site){
         case "thisav.com":
         case "missav.com":MissAV_nopause()
