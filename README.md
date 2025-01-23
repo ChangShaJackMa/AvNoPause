@@ -1,7 +1,7 @@
 main分支：成品    dev分支：还在开发中的功能
 这是一个小工具，取消av网站自动暂停，目前是一个页面一个页面的手动开发，后续有时间会做成一个小工具，可以通过添加规则的方式来自动暂停，目前只收录两个网站
 
-# missav.com/thisav.com
+# missav系列：包括thisav.com/misasv.ws(这是正版网站)/missav.ai等(missav.com是盗版网站，已经被封了)
 >ps:这两个网站不知道谁抄袭谁，反正代码都一样
 > 
 >Missav或者thisav切换页面或者失去焦点都会自动暂停，此插件就是阻止视频自动暂停，不影响空格或者单击导致的暂停。注意：使用manifestV3实现后，可能每次需要手动授权才会运行，首次使用，如果需要授权，请选择总是允许(chrome可能不需要，firefox可能需要)，这样下次打开页面插件就会自动运行了。
@@ -74,12 +74,12 @@ firefox打包教程:
 >
 >3:进入AvNoPause/AvNoPause目录:cd 你的目录
 > 
->4:允许web-ext:Set-ExcutionPolicy RemoteSigned
+>4:允许web-ext:Set-ExcutionPolicy RemoteSigned(如果执行失败，则可以尝试先执行：Set-ExecutionPolicy -Scope CurrentUser，然后输入RemoteSigned，可以达到同样的效果)
 > 
 >5:删除manifest.json文件，并把manifest_firefox.json文件名修改为manifest.json文件，并修改文件内容：
 >>"browser_specific_settings": {"gecko": {"id":"在这里随便填写一个新的id,格式为xx@xx"｝｝
 > 
->6:运行web-ext sgin: web-ext sign --api-key "你的用户名" --api-secret "你的jwt key"
+>6:运行web-ext sgin: web-ext sign --api-key "你的用户名" --api-secret "你的jwt key" --channel unlisted
 > ![img_1.png](keyWithSecret.png)
 > 
 >7:然后进入AvNoPause/AvNoPause/web-ext目录下找到xx.xpi文件，这个文件就是最新生成的firefox插件，然后拖放到firefox中就行了
