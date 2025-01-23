@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AvNoPause",
-  "version": "5.0",
+  "version": "20250123",
 
   "description": "av网站小工具：复制下载链接、禁止自动暂停等",
   "icons": {
@@ -21,7 +21,7 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "dcf@cmn"
+      "id": "dcf@cnm2.com2"
     }
   }
 }
